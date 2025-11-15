@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Najdi Home Kitchen</title>
+
+  <!-- Styles & Fonts -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Noto+Kufi+Arabic:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Najdi Home Kitchen Logo" class="logo" />
+      <h1>Najdi Home Kitchen</h1>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--  CONTACT INTRO  -->
+  <section class="contact-intro fade-in">
+    <h2>Contact Us or Place Your Order</h2>
+    <p>We would love to hear from you! Whether you are craving authentic Najdi food or planning a family event, reach out below and we will respond quickly.</p>
+  </section>
+
+  <!-- CONTACT FORM  -->
+  <section class="contact-form-section fade-in">
+    <form id="orderForm" class="contact-form">
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="dish">Select Dish:</label>
+        <select id="dish" name="dish" required>
+          <option value="">-- Choose a Dish --</option>
+          <option value="Jareesh">Jareesh</option>
+          <option value="Qursan">Qursan</option>
+          <option value="Margoug">Margoug</option>
+          <option value="Kleija Cookies">Kleija Cookies</option>
+          <option value="Saudi Coffee & Dates">Saudi Coffee & Dates</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Special Requests:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Tell us your preferences..."></textarea>
+      </div>
+
+      <button type="submit" class="btn primary-btn">Submit Order</button>
+    </form>
+
+    <!-- Thank You Message -->
+    <div id="thankYou" class="hidden">
+      <h3>Thank you for your order!</h3>
+      <p>We will confirm your request shortly. You will receive an email reply from <a href="mailto:202212593@yu.edu.sa">202212593@yu.edu.sa</a>.</p>
+    </div>
+  </section>
+
+  <!-- MAP SECTION -->
+  <section class="map-section fade-in">
+    <h3>Find Us in Riyadh</h3>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.447!2d46.6753!3d24.7136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f038b93f6e7f5%3A0x4d2b7fdf2babc123!2sRiyadh%2C%20Saudi%20Arabia!5e0!3m2!1sen!2ssa!4v1667920000000"
+      width="600"
+      height="400"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      © 2025 Najdi Home Kitchen <br>
+      <br>
+      <a href="mailto:202212593@yu.edu.sa">202212593@yu.edu.sa</a> <br>
+      <a href="https://www.visitsaudi.com/en/see-do/food" target="_blank">Visit Saudi, Food Culture</a>
+    </p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
